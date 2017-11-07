@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="applicant_methods">
+    <listeners>
+        <listener class-name="listeners.ListenerLogger"/>
+    </listeners>
+    <test name="listEntities">
+        <classes>
+            <class name="api.listEntities.AllStatic"/>
+            <class name="api.listEntities.AutoCompleteTag"/>
+            <class name="api.listEntities.GetAllCities"/>
+        </classes>
+    </test>
+    <test name="notification">
+        <classes>
+            <class name="api.notification.ListNotifications"/>
+        </classes>
+    </test>
+    <test name="user">
+        <classes>
+            <class name="api.user.UserLoginAndLogout"/>
+            <class name="api.user.UserRegistration"/>
+            <class name="api.user.UserSendSupport"/>
+        </classes>
+    </test>
+
+    <!--Тесты с использованием браузера-->
+    <test name="forgotPassword">
+        <classes>
+            <class name="api.user.ForgotPassword"/>
+        </classes>
+    </test>
+    <test name="linkAutoLogin">
+        <classes>
+            <class name="api.user.GetLinkAutoLogin"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ConsoleErrors">
+  <test name="VerifyBrowserConsoleErrors">
+    <classes>
+      <class name="service.ConsoleErrors"/>
+    </classes>
+  </test>
+  <test name="VerifyBrowserConsoleErrorsMobile">
+    <parameter name="browser" value="MCH"/>
+    <classes>
+      <class name="service.ConsoleErrorsMobile"/>
+    </classes>
+  </test>
+</suite>

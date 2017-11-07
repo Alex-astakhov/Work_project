@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ClearMailbox">
+  <test name="ClearMailbox">
+    <classes>
+      <class name="service.ClearMailbox"/>
+    </classes>
+  </test>
+</suite>

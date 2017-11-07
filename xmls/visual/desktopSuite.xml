@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VisualTestOfDesktopPagesPages">
+    <test name="ClearAllActual">
+        <classes>
+            <class name="visual.Utils">
+                <methods>
+                    <include name="clearActual"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="GeneralPages">
+    <parameter name="stage" value="false"/>
+    <classes>
+      <class name="visual.desktop.BrandedPages">
+          <methods>
+              <exclude name="verifyAirAstanaPopup"/>
+          </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

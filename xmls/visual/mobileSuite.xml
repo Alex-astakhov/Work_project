@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VisualTestOfMobilePages">
+  <parameter name="browser" value="MCH"/>
+  <test name="GeneralPages">
+    <classes>
+      <class name="visual.mobile.GeneralPages"/>
+    </classes>
+  </test>
+</suite>

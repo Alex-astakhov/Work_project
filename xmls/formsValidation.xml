@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FormsValidation">
+  <test name="RegistrationForms">
+    <classes>
+      <class name="formValidation.RegistrationForms"/>
+    </classes>
+  </test>
+  <test name="VacancyForm">
+    <classes>
+      <class name="formValidation.VacancyForm"/>
+    </classes>
+  </test>
+  <test name="RegistrationFormsMobile">
+    <parameter name="browser" value="MCH"/>
+    <classes>
+      <class name="formValidation.RegistrationFormsMobile"/>
+    </classes>
+  </test>
+</suite>

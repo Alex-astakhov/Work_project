@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="restoring_of_deleted_CV">
+  <test name="restoreCV">
+    <classes>
+      <class name="applicant.desktop.cv.RestoreDeletedCV"/>
+    </classes>
+  </test>
+    <test name="restoring_of_deleted_CV_Mobile">
+        <parameter name="browser" value="MCH"/>
+        <classes>
+            <class name="applicant.mobile.cv.RestoreDeletedCV"/>
+        </classes>
+    </test>
+</suite>

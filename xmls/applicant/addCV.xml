@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CV_creation">
+  <test name="EditingOfNewCV">
+    <classes>
+      <class name="applicant.desktop.cv.AddCV"/>
+    </classes>
+  </test>
+  <test name="EditingOfNewCV_OnMobile">
+    <parameter name="browser" value="MCH"/>
+    <classes>
+      <class name="applicant.mobile.cv.AddCvMobile"/>
+    </classes>
+  </test>
+  <test name="EditingOfNewCV_FF">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="applicant.desktop.cv.AddCV"/>
+    </classes>
+  </test>
+</suite>
